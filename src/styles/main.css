@@ -1,1 +1,30 @@
-/*# sourceMappingURL=main.css.map */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  width: 25%;
+  border-radius: 2em;
+  background-color: rgb(227, 225, 225);
+}
+
+.modal-container {
+  display: flex;
+  justify-content: center;
+}
+
+.content-msg {
+  margin-top: 0.5em;
+}
+
+.content-body {
+  margin: margin-bottom 0.5em;
+}
+
+.options {
+  margin: margin-bottom 0.5em;
+}
+
+.btn-play {
+  margin-bottom: margin-bottom 0.5em;
+}/*# sourceMappingURL=main.css.map */
