@@ -1,0 +1,22 @@
+{
+  "name": "gamepog",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^3.1.0",
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "main": "main.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
