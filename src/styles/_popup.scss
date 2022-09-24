@@ -7,10 +7,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Poppins", sans-serif;
   // border: 1px solid black;
   // width: 25%;
   // border-radius: 3em;
   // background-color: rgb(227, 225, 225);
+
+  .btn-play:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 5px black;
+  }
 }
 
 .modal-container {
@@ -23,6 +29,7 @@ body {
   left: 50%;
   top: 50%;
   border-radius: 1em;
+  box-shadow: 2px 2px 5px black;
   // display: none;
 }
 
@@ -50,12 +57,28 @@ body {
   font-size: 17px;
   cursor: pointer;
   padding: 5px 0;
+  font-family: "Poppins", sans-serif;
+  border-radius: 1em;
 }
 
 .inv-container {
   display: none;
+  position: absolute;
+  bottom: 2em;
+
+  .open-btn {
+    width: 6em;
+    padding: 5px 0;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.05em;
+    border-radius: 1em;
+    border: none;
+    background-color: #000080;
+    color: #ffffff;
+  }
 }
 
 .placeholder {
   display: none;
+  justify-content: center;
 }
