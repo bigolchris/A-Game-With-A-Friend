@@ -45,6 +45,12 @@ $margin-bottom: 0.5em;
     position: relative;
     bottom: -6em;
   }
+
+  .btn-play:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 5px black;
+    border-radius: 8px;
+  }
   // border-radius: 1em;
   // display: none;
 }
@@ -81,18 +87,4 @@ $margin-bottom: 0.5em;
   font-size: 17px;
   cursor: pointer;
   padding: 5px 0;
-}
-
-.inv-container {
-  display: flex;
-  &.hide {
-    display: none;
-  }
-}
-
-.placeholder {
-  display: flex;
-  &.hide {
-    display: none;
-  }
 }
