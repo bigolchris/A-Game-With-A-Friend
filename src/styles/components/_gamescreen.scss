@@ -1,0 +1,78 @@
+.inv-container {
+  border: 1px solid black;
+  width: 20vw;
+  height: 25vh;
+  position: absolute;
+  top: 55%;
+  right: 1em;
+  .open-btn {
+    position: absolute;
+    margin-bottom: 1em;
+    left: 40%;
+    bottom: 0%;
+    width: 7em;
+    background-color: #b4d8fc;
+    color: black;
+    text-align: center;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 2.5px 0;
+  }
+
+  .open-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 5px black;
+    border-radius: 8px;
+  }
+  &.hide {
+    display: none;
+  }
+
+  .inside-inv {
+    border: 1px solid black;
+    width: 15vw;
+    height: 15vh;
+    position: relative;
+    left: 12%;
+    margin-top: 2em;
+  }
+}
+
+.placeholder {
+  display: flex;
+  &.hide {
+    display: none;
+  }
+}
+
+.game-wrapper {
+  border: 1px solid black;
+  width: 99vw;
+  height: 10vh;
+  position: absolute;
+  bottom: 1em;
+  &.hide {
+    display: none;
+  }
+}
+
+.decisions-wrapper {
+  border: 1px solid black;
+  width: 20vw;
+  height: 25vh;
+  position: absolute;
+  top: 55%;
+  &.hide {
+    display: none;
+  }
+}
+
+.game-screen {
+  border: 1px solid black;
+  width: 99vw;
+  height: 90vh;
+  &.hide {
+    display: none;
+  }
+}
