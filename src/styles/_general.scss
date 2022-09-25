@@ -1,13 +1,29 @@
 @use "./utils/" as *;
 
+
+
 body {
   background-color: $main-bg-color;
+  color: $main-text-color;
+  font-size: 1.5em;
 }
 
 .game-container {
   border: 1px solid $main-border-color;
   border-radius: 1.5em;
 }
+
+.btn {
+  background-color: $main-btn-color;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  box-shadow: 0px 4px 5px -2px $main-border-color;
+  border-radius: .25em;
+  padding: .15em .85em;
+}
+
+
 
 .hide {
   display: none;
