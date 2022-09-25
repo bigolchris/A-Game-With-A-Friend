@@ -1,8 +1,12 @@
 @use "./utils/" as *;
 
-
+@font-face {
+  font-family: digiClock;
+  src: url("../../DS-DIGII.TTF");
+}
 
 body {
+  font-family: digiClock;
   background-color: $main-bg-color;
   color: $main-text-color;
   font-size: 1.5em;
@@ -19,11 +23,9 @@ body {
   border: none;
   outline: none;
   box-shadow: 0px 4px 5px -2px $main-border-color;
-  border-radius: .25em;
-  padding: .15em .85em;
+  border-radius: 0.25em;
+  padding: 0.15em 0.85em;
 }
-
-
 
 .hide {
   display: none;
