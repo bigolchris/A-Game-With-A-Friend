@@ -40,36 +40,39 @@
 
     <!-- game screen box *dialog* -->
     <div class="game-screen hide">
-      <div class="game-wrapper hide">
-        <div class="game-container">
-          <div class="game-content"></div>
-        </div>
-      </div>
-
       <!-- decisions being made in game will be held here -->
 
-      <div class="decisions-wrapper hide">
-        <div class="decisions-container">
-          <div class="decisions-content"></div>
+      <div class="ui-container">
+        <div class="game-container player-info-container">
+          <div class="player-info-container">
+            <div class="player-info-content"></div>
+          </div>
+        </div>
+
+        <!-- Game info -->
+        <div class="game-container interactive-container">
+          <div class="interactive-container">
+            <div class="interactive-content"></div>
+          </div>
+        </div>
+
+        <!-- Used to open inventory -->
+
+        <div class="game-container inv-container hide">
+          <div class="open-inv">
+            <button class="open-btn">Inventory</button>
+          </div>
+          <div class="inside-inv"></div>
         </div>
       </div>
 
-      <!-- Used to open inventory -->
-
-      <div class="inv-container hide">
-        <div class="open-inv">
-          <button class="open-btn">Inventory</button>
+      <div class="game-container event-container">
+        <div class="log-container">
+          <div class="game-events"></div>
         </div>
-        <div class="inside-inv"></div>
       </div>
     </div>
     <!-- Any event that happens in game. Damage taken, damage done, armor health after hit taken etc will be displayed here -->
-
-    <div class="event-container">
-      <div class="log-container">
-        <div class="game-events"></div>
-      </div>
-    </div>
 
     <script type="module" src="./src/main.js"></script>
   </body>

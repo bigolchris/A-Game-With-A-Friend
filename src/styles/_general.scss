@@ -1,5 +1,12 @@
+@use "./utils/" as *;
+
 body {
-  background-color: #545775;
+  background-color: $main-bg-color;
+}
+
+.game-container {
+  border: 1px solid $main-border-color;
+  border-radius: 1.5em;
 }
 
 .hide {
