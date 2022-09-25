@@ -1,33 +1,37 @@
 .inv-container {
-    height: 25vh;
-    flex: 1;
-    .open-btn {
-      margin-bottom: 1em;
-      width: 7em;
-      background-color: #b4d8fc;
-      color: black;
-      text-align: center;
-      border: none;
-      font-size: 17px;
-      cursor: pointer;
-      padding: 2.5px 0;
-    }
-  
-    .open-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 2px 2px 5px black;
-      border-radius: 8px;
-    }
-    &.hide {
-      display: none;
-    }
-  
-    .inside-inv {
-      border: 1px solid black;
-      width: 15vw;
-      height: 15vh;
-      position: relative;
-      left: 12%;
-      margin-top: 2em;
-    }
+  height: 25vh;
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  align-items: center;
+
+  .open-btn {
+    margin-bottom: 1em;
+    width: 7em;
+    background-color: #b4d8fc;
+    color: black;
+    text-align: center;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 2.5px 0;
+    margin-top: 1em;
   }
+
+  .open-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 5px black;
+    border-radius: 8px;
+  }
+  &.hide {
+    display: none;
+  }
+
+  .inside-inv {
+    border: 1px solid green;
+    width: 15vw;
+    height: 15vh;
+
+    margin-top: 2em;
+  }
+}
