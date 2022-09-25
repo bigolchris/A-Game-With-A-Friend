@@ -1,18 +1,17 @@
 function fadeOut() {
   let fadeTarget = document.querySelector(".modal-container");
-  let fadeEffect = setInterval(function () {
-    if (!fadeTarget.style.opacity) {
-      fadeTarget.style.opacity = 1;
-    }
-    if (fadeTarget.style.opacity > 0) {
-      fadeTarget.style.opacity -= 0.1;
-    } else {
-      clearInterval(fadeEffect);
-    }
-    if (fadeTarget.style.opacity <= 0) {
+  fadeTarget.classList.add("fade-out");
+    // if (!fadeTarget.style.opacity) {
+    //   fadeTarget.style.opacity = 1;
+    // }
+    // if (fadeTarget.style.opacity > 0) {
+    //   fadeTarget.style.opacity -= 0.1;
+    // } else {
+    //   clearInterval(fadeEffect);
+    // }
+    setTimeout(() => {
       fadeTarget.remove();
-    }
-  }, 100);
+    }, 1000);
 }
 
 document.querySelector(".btn-play").addEventListener("click", fadeOut);
