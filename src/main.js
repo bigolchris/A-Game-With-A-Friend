@@ -1,2 +1,3 @@
 import "./startup/startpop.js";
-import "./startup/gamescreen";
+import "./startup/gamescreen.js";
+import "./siteactions/hiddenFeet.js";
