@@ -4,41 +4,30 @@ $margin-bottom: 0.5em;
 
 .modal-content {
   display: flex;
+  height: 100%;
   flex-direction: column;
   align-items: center;
-
-  // border: 1px solid black;
-  // width: 25%;
-  // border-radius: 3em;
-  // background-color: rgb(227, 225, 225);
+  justify-content: space-around;
 }
 
 .modal-container {
-  // display: flex;
-  // justify-content: center;
   background-color: $main-bg-color;
-  width: 100vw;
+  // since the width and height cover the entire screen we don't need to center the modal 
+  width: 100%;
   height: 100vh;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
+  position: fixed;
+  left: 0;
+  top: 0;
   &.fade-out {
     animation: fade-out 1s forwards;
   }
   .content-msg {
     position: relative;
-    top: -25em;
-    letter-spacing: 0.2em;
-    font-size: 20px;
-    // right: -0.5em;
   }
 
   .content-body {
     position: relative;
-    top: -10em;
     letter-spacing: 0.1em;
-    // right: 0.1em;
   }
 
   .btn-play {
@@ -56,8 +45,6 @@ $margin-bottom: 0.5em;
     box-shadow: 2px 2px 5px black;
     border-radius: 8px;
   }
-  // border-radius: 1em;
-  // display: none;
 }
 
 .modal-wrapper {
@@ -81,15 +68,5 @@ $margin-bottom: 0.5em;
 }
 
 .btn-play {
-  margin: $margin-bottom;
-  display: block;
-  position: relative;
-  width: 7em;
-  text-align: center;
-  background-color: #0f72e5;
-  color: #ffffff;
-  border: none;
-  font-size: 17px;
-  cursor: pointer;
-  padding: 5px 0;
+  
 }
