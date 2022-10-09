@@ -1,8 +1,13 @@
 .placeholder {
   display: flex;
+  justify-content: center;
   &.hide {
     display: none;
   }
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .game-screen {

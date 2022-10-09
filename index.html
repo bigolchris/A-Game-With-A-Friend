@@ -38,6 +38,60 @@
       </div>
     </div>
 
+    <!-- stat screen to create main character -->
+
+    <div class="stat-wrapper hide">
+      <div class="char-container">
+        <div class="char-name">
+          <h3 class="pls">Please Enter Name</h3>
+          <input class="char-input" type="text">
+        </div>
+        <strong class="start-stat">Points to spend:</strong>
+        <strong class="points" >(..)</strong>
+      </div>
+      <div class="stat-container">
+       
+        <div class="stat-names">
+          <ul class="inside-name">
+            <div class="btn-group">
+              <div class="sub-group">
+                <button class="sub-btn" data-stat="intelligence">-</button>
+                <button class="sub-btn" data-stat="strength">-</button>
+                <button class="sub-btn" data-stat="insight">-</button>
+                <button class="sub-btn" data-stat="engineering">-</button>
+                <button class="sub-btn" data-stat="stealth">-</button>
+              </div>
+                <div class="stat-group">
+                  <li class=" stats">intelligence</li>
+                  
+                  <li class=" stats">strength</li>
+                  <li class=" stats">insight</li>
+                  <li class=" stats">engineering</li>
+                  <li class=" stats">stealth</li>
+                </div>
+                <div class="add-group">
+                <button class="add-btn" data-stat="intelligence">+</button>
+                <button class="add-btn" data-stat="strength">+</button>
+                <button class="add-btn" data-stat="insight">+</button>
+                <button class="add-btn" data-stat="engineering">+</button>
+                <button class="add-btn" data-stat="stealth">+</button>
+                </div>
+                <div class="num-val">
+                  <strong class="intelligence-stat"></strong>
+                  <strong class="strength-stat"></strong>
+                  <strong class="insight-stat"></strong>
+                  <strong class="engineering-stat"></strong>
+                  <strong class="stealth-stat"></strong>
+                </div>
+            
+            </div>
+          </ul>
+          </div>
+        </div>
+        <button class="create-character">CREATE</button>
+      </div>
+    </div>
+
     <!-- game screen box *dialog* -->
     <div class="game-screen hide">
       <!-- decisions being made in game will be held here -->
@@ -59,10 +113,9 @@
         <!-- Used to open inventory -->
 
         <div class="game-container inv-container hide">
-          <div class="open-inv">
-            <button class="open-btn">Inventory</button>
-          </div>
           <div class="inside-inv"></div>
+
+          <button class="btn">Inventory</button>
         </div>
       </div>
 
