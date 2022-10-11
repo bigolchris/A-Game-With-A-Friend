@@ -18,52 +18,40 @@ $margin-bottom: 0.5em;
   position: fixed;
   left: 0;
   top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity .55s ease-in-out;
   &.fade-out {
-    animation: fade-out 1s forwards;
+    opacity: 0;
   }
   .content-msg {
-    position: relative;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    animation: fade-out 2s reverse forwards;
+    animation-delay: .25s;
+    opacity: 0;
   }
 
   .content-body {
-    position: relative;
     letter-spacing: 0.1em;
+    margin-block: 2em;
+    font-size: 2em;
+    animation: fade-out 3s reverse forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
   }
 
   .btn-play {
-    position: relative;
-    bottom: -6em;
+    font-size: 1.2em;
+    padding-inline: 2em;
+    animation: fade-out 3s reverse forwards;
+    animation-delay: 2.75s;
+    opacity: 0;
   }
 
   .options {
-    position: relative;
     bottom: -6em;
+    margin: $margin-bottom;
   }
-
-  .btn-play:hover {
-    transform: translateY(-2px);
-    box-shadow: 2px 2px 5px red;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-}
-
-.modal-wrapper {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.content-msg {
-  margin-top: 0.5em;
-}
-
-.content-body {
-  margin: $margin-bottom;
-}
-
-.options {
-  margin: $margin-bottom;
 }
