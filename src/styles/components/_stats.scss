@@ -7,139 +7,109 @@
   border: 1px solid $main-border-color;
   max-width: 1600px;
   margin-inline: auto;
+  font-size: 1.25em;
+  padding: 1em;
 
   &.hide {
     display: none;
   }
 
-  .stat-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    min-width: 40%;
-    border: 1px solid $main-border-color;
-  }
-
-  .char-name {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .char-input {
-    height: 30%;
-    background-color: black;
-    color: #fff;
-    border: 1px solid $main-border-color;
-    width: 50%;
-  }
-
-  .stat-change {
-    border: 1px solid $main-border-color;
-  }
-
-  .stat-value-container {
-    border: 1px solid $main-border-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .sub-group {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 0.4em;
-    height: 90%;
-  }
-
-  .stat-group {
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    align-items: center;
-  }
-  .add-group {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 0.91em;
-  }
-
-  .num-val {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid $main-border-color;
-    height: 90%;
-    width: 10%;
-    align-items: center;
-    gap: 0.8em;
-    margin-left: auto;
-  }
-
-  .inside-name {
-    border: 1px solid $main-border-color;
-    display: flex;
-    flex-direction: column;
-  }
-  .stats {
-    list-style: none;
-    margin-left: 0.5em;
-    display: flex;
-    flex: 1;
-  }
-
-  .sub-btn {
-    width: 6em;
-    margin-left: auto;
-    margin-bottom: 1em;
-    background: linear-gradient(135deg, transparent 22px, $main-border-color 22px, #8b0000 10%)
-        top right,
-      linear-gradient(45deg, transparent 22px, $main-border-color 20px, #8b0000 100%) bottom
-        right;
-    background-size: 100% 50%;
-    background-repeat: no-repeat;
-  }
-
-  .add-btn {
-    width: 6em;
-    background: linear-gradient(
-          -135deg,
-          transparent 22px,
-          $main-border-color 22px,
-          #8b0000 10%
-        )
-        top right,
-      linear-gradient(-45deg, transparent 22px, $main-border-color 20px, #8b0000 100%) bottom
-        right;
-    background-size: 100% 50%;
-    background-repeat: no-repeat;
-  }
-
   .char-container {
     display: flex;
     border: 1px solid $main-border-color;
-    width: 40%;
     height: 5vh;
+    min-width: 75%;
   }
 
-  .char-name {
+  .char-name {    
     border: 1px solid $main-border-color;
-    width: 40%;
+    width: 60%;
     height: 5vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pls {
+    font-size: 0.8em;
+  }
+
+  .char-input {
+    background-color: black;
+    color: #fff;
+    padding: .15em .25em;
+    font-size: 1em;
+    text-align: center;
+    font-family: digiClock;
+    margin-left: .5em;
+    border: 1px solid $main-border-color;
+    width: 50%;
   }
 
   .points {
     margin-left: 1em;
   }
 
-  .pls {
-    font-size: 0.6em;
+  .stat-change {
+    border: 1px solid $main-border-color;
+  }
+
+  .stat-container {
+    display: flex;
+    justify-content: space-around;
+    min-width: 75%;
+    border: 1px solid $main-border-color;
+  }
+
+  .stat-name-container {
+    flex: 5;
+  }
+
+  .stat-value-container {
+    display: flex;
+    justify-content: center;
+    margin-block: 1em;
+
+    .stat-name {
+      text-align: center;
+      width: 75%;
+      margin: 0;
+    }
+
+    .change-btn {
+      padding-inline: 4em;
+      height: 1.5em;
+      font-size: 1em;
+      background-color: transparent;
+      background-size: 100% 50%;
+      background-repeat: no-repeat;
+      background-position: top left, bottom left;
+      background-image: 
+      linear-gradient(135deg, transparent 2em, $main-border-color 2em, #8b0000 10%),
+      linear-gradient(45deg, transparent 2em, $main-border-color .5em, #8b0000 100%);
+    }
+  
+    .add-btn {
+      rotate: 180deg;
+    }
+
+  }
+
+  .num-val {
+    flex: 1;
+    border: 1px solid $main-border-color;
+    padding-block: .35em;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+    flex: 1;
+  }
+
+  .create-character {
+    font-size: 1.15em;
+    margin-top: 1em;
   }
 }

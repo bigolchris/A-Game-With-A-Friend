@@ -19,7 +19,7 @@
     <!-- <div id="app"></div> -->
 
     <h1 class="placeholder hide">Ushy Gushy Games inc.</h1>
-
+    
     <!-- When a person loads the page, they will be greeted by this message before entering game -->
     <div class="modal-container">
       <div class="modal-wrapper">
@@ -30,7 +30,6 @@
           <div class="content-body">
             PLACEHOLDER NO IDEA FOR GAME PREMISE YET
           </div>
-          <!-- <strong class="options">PRESS PLAY TO CONTINUE</strong> -->
           <div class="btn-options">
             <button class="btn btn-play">PLAY</button>
           </div>
@@ -44,47 +43,57 @@
       <div class="char-container">
         <div class="char-name">
           <h3 class="pls">Please Enter Name</h3>
-          <input class="char-input" type="text">
+          <input class="char-input" type="text" />
         </div>
         <strong class="start-stat">Points to spend:</strong>
-        <strong class="points" >(..)</strong>
+        <strong class="points">(..)</strong>
       </div>
       <div class="stat-container">
-       
-        <div class="stat-value-container">
-              <div class="sub-group">
-                <button class="sub-btn" data-stat="intelligence">-</button>
-                <button class="sub-btn" data-stat="strength">-</button>
-                <button class="sub-btn" data-stat="insight">-</button>
-                <button class="sub-btn" data-stat="engineering">-</button>
-                <button class="sub-btn" data-stat="stealth">-</button>
-              </div>
-                <div class="stat-group">
-                  <li class=" stats">intelligence</li>
-                  <li class=" stats">strength</li>
-                  <li class=" stats">insight</li>
-                  <li class=" stats">engineering</li>
-                  <li class=" stats">stealth</li>
-                </div>
-                <div class="add-group">
-                <button class="add-btn" data-stat="intelligence">+</button>
-                <button class="add-btn" data-stat="strength">+</button>
-                <button class="add-btn" data-stat="insight">+</button>
-                <button class="add-btn" data-stat="engineering">+</button>
-                <button class="add-btn" data-stat="stealth">+</button>
-                </div>
-                <div class="num-val">
-                  <strong class="intelligence-stat"></strong>
-                  <strong class="strength-stat"></strong>
-                  <strong class="insight-stat"></strong>
-                  <strong class="engineering-stat"></strong>
-                  <strong class="stealth-stat"></strong>
-                </div>
-            
-            </div>
+
+        <div class="stat-name-container">
+
+          <div class="stat-value-container intelligence-container">
+            <button class="sub-btn change-btn" data-stat="intelligence">-</button>
+            <p class="stat-name">intelligence</p>
+            <button class="add-btn change-btn" data-stat="intelligence">+</button>
           </div>
-        <button class="btn create-character">CREATE</button>
+
+          <div class="stat-value-container strength-container">
+            <button class="sub-btn change-btn" data-stat="strength">-</button>
+            <p class="stat-name">strength</p>
+            <button class="add-btn change-btn" data-stat="strength">+</button>
+          </div>
+
+          <div class="stat-value-container insight-container">
+            <button class="sub-btn change-btn" data-stat="insight">-</button>
+            <p class="stat-name">insight</p>
+            <button class="add-btn change-btn" data-stat="insight">+</button>
+          </div>
+
+          <div class="stat-value-container engineering-container">
+            <button class="sub-btn change-btn" data-stat="engineering">-</button>
+            <p class="stat-name">engineering</p>
+            <button class="add-btn change-btn" data-stat="engineering">+</button>
+          </div>
+
+          <div class="stat-value-container stealth-container">
+            <button class="sub-btn change-btn" data-stat="stealth">-</button>
+            <p class="stat-name">stealth</p>
+            <button class="add-btn change-btn" data-stat="stealth">+</button>
+          </div>
+
+        </div>
+
+        <div class="num-val">
+          <strong class="intelligence-stat"></strong>
+          <strong class="strength-stat"></strong>
+          <strong class="insight-stat"></strong>
+          <strong class="engineering-stat"></strong>
+          <strong class="stealth-stat"></strong>
+        </div>
+
       </div>
+      <button class="btn create-character">CREATE</button>
     </div>
 
     <!-- game screen box *dialog* -->

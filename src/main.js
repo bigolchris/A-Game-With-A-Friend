@@ -36,7 +36,7 @@ let pointDisplay = document.querySelector(".points");
 
 pointDisplay.innerHTML = points;
 
-let subGroup = document.querySelector(".btn-group");
+let subGroup = document.querySelector(".stat-container");
 
 subGroup.addEventListener("click", (e) => {
   console.log(e.target.classList.contains("str-sub"));
