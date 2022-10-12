@@ -4,88 +4,88 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
-  flex: 1;
+  border: 1px solid $main-border-color;
+  max-width: 1600px;
+  margin-inline: auto;
 
   &.hide {
     display: none;
   }
+
+  .stat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 40%;
+    border: 1px solid $main-border-color;
+  }
+
   .char-name {
     display: flex;
     align-items: center;
     justify-content: center;
-    justify-content: space-evenly;
   }
 
   .char-input {
     height: 30%;
     background-color: black;
     color: #fff;
-    border: 1px solid red;
+    border: 1px solid $main-border-color;
     width: 50%;
   }
 
-  .stat-container {
-    // display: flex;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid red;
-    height: 50vh;
-    width: 40%;
-    flex: 1;
-  }
-
   .stat-change {
-    border: 1px solid red;
-    // display: flex;
-    // flex: 2;
+    border: 1px solid $main-border-color;
   }
 
-  .stat-names {
-    border: 1px solid red;
-    // display: flex;
-    // justify-content: center;
-    // flex: 2;
-  }
-
-  .inside-name {
-    border: 1px solid red;
-    // flex: 2;
+  .stat-value-container {
+    border: 1px solid $main-border-color;
     display: flex;
-    flex-direction: column;
-  }
-
-  .create-character {
-    border: 1px solid red;
-    // display: flex;
-    // flex: 1;
-  }
-  .btn-group {
-    display: flex;
-    justify-content: space-evenly;
-    // flex: 2;
-  }
-
-  .add-group {
-    display: flex;
-    width: 10%;
-    flex-direction: column;
-    gap: 0.91em;
-    // flex: 2;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 
   .sub-group {
+    flex: 2;
     display: flex;
     flex-direction: column;
-    width: 10%;
     gap: 0.4em;
+    height: 90%;
   }
 
   .stat-group {
+    flex: 3;
     display: flex;
     flex-direction: column;
     list-style: none;
     align-items: center;
+  }
+  .add-group {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.91em;
+  }
+
+  .num-val {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid $main-border-color;
+    height: 90%;
+    width: 10%;
+    align-items: center;
+    gap: 0.8em;
+    margin-left: auto;
+  }
+
+  .inside-name {
+    border: 1px solid $main-border-color;
+    display: flex;
+    flex-direction: column;
   }
   .stats {
     list-style: none;
@@ -95,24 +95,27 @@
   }
 
   .sub-btn {
+    width: 6em;
+    margin-left: auto;
     margin-bottom: 1em;
-    background: linear-gradient(135deg, transparent 22px, red 22px, #8b0000 10%)
+    background: linear-gradient(135deg, transparent 22px, $main-border-color 22px, #8b0000 10%)
         top right,
-      linear-gradient(45deg, transparent 22px, red 20px, #8b0000 100%) bottom
+      linear-gradient(45deg, transparent 22px, $main-border-color 20px, #8b0000 100%) bottom
         right;
     background-size: 100% 50%;
     background-repeat: no-repeat;
   }
 
   .add-btn {
+    width: 6em;
     background: linear-gradient(
           -135deg,
           transparent 22px,
-          red 22px,
+          $main-border-color 22px,
           #8b0000 10%
         )
         top right,
-      linear-gradient(-45deg, transparent 22px, red 20px, #8b0000 100%) bottom
+      linear-gradient(-45deg, transparent 22px, $main-border-color 20px, #8b0000 100%) bottom
         right;
     background-size: 100% 50%;
     background-repeat: no-repeat;
@@ -120,13 +123,13 @@
 
   .char-container {
     display: flex;
-    border: 1px solid red;
+    border: 1px solid $main-border-color;
     width: 40%;
     height: 5vh;
   }
 
   .char-name {
-    border: 1px solid red;
+    border: 1px solid $main-border-color;
     width: 40%;
     height: 5vh;
     display: flex;
@@ -134,18 +137,6 @@
 
   .points {
     margin-left: 1em;
-  }
-
-  .num-val {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    // margin-bottom: 3em;
-    border: 1px solid red;
-    height: 90%;
-    width: 10%;
-    align-items: center;
-    gap: 0.8em;
   }
 
   .pls {
