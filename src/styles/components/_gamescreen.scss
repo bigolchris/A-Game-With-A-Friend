@@ -15,19 +15,22 @@ button:hover {
   flex-direction: column;
   justify-content: space-around;
   height: 90vh;
+  max-width: 2000px;
+  margin-inline: auto;
   &.hide {
     display: none;
   }
 }
 
 .ui-container {
+  flex: 1;
+  max-height: 25vh;
   display: flex;
   gap: 1em;
 }
 
 .interactive-container {
   flex: 2;
-  height: 10vh;
   bottom: 1em;
   &.hide {
     display: none;
@@ -36,7 +39,6 @@ button:hover {
 
 .player-info-container {
   flex: 1;
-  height: 25vh;
   &.hide {
     display: none;
   }
